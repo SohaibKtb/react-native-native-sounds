@@ -1,27 +1,34 @@
-# react-native-native-soundes
-
+# react-native-native-sounds
+# react-native-a-sounds
 A very lite module to play system sounds and beep for react-native apps (no sound files)
 
-## Installation
 
-```sh
-npm install react-native-native-soundes
+## Install
+using npm:
+```js
+npm i "@SohaibKtb/react-native-native-sounds"
 ```
-
+or using yarn
+```js
+yarn add "@SohaibKtb/react-native-native-sounds"
+```
 ## Usage
 
 ```js
-import { multiply } from 'react-native-native-soundes';
-
-// ...
-
-const result = await multiply(3, 7);
+import RNBeep from 'react-native-native-sounds';
+```
+Examples:
+```js
+<Button onPress={ () => {RNBeep.beep()} } title="Beep Success"></Button>
+<Button onPress={ () => {RNBeep.beep(false)} } title="Beep Fail"></Button>
+<Button onPress={ () => {RNBeep.PlaySysSound(RNBeep.AndroidSoundIDs.TONE_CDMA_ABBR_ALERT)} } title="Beep Android Custom"></Button>
+<Button onPress={ () => {RNBeep.PlaySysSound(41)} } title="Beep Something"></Button>
+<Button onPress={ () => {RNBeep.PlaySysSound(RNBeep.iOSSoundIDs.AudioToneBusy)} } title="Beep iOS Custom"></Button>
 ```
 
-## Contributing
+Happy Beep!
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
+FREE!
 ## License
 
 MIT
