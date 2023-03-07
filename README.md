@@ -1,5 +1,5 @@
 # react-native-native-sounds
-# react-native-a-sounds
+
 A very lite module to play system sounds and beep for react-native apps (no sound files)
 
 
